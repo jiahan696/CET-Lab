@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+pip-wheel-metadata/
+
+# Build / release artifacts
+build/
+dist/
+*.spec
+*.exe
+*.msi
+*.zip
+*.7z
+*.tar.gz
+
+# Secrets and local AI configuration
+.env
+.env.*
+*.key
+*.pem
+data/ai_config.json
+**/ai_config.json
+!docs/ai_config.example.json
+
+# Runtime data
+data/*
+!data/.gitkeep
+!data/README.md
+data/papers/
+data/uploads/
+*.log
+*.tmp
+*.bak
+*.corrupt-*.json
+
+# Local/copyrighted exam material — never commit these
+样卷/
+assets/papers/sample_cet4/
+*.pdf
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Screenshots generated during local testing
+*.png
+!assets/app_icon.png
+!docs/*.png

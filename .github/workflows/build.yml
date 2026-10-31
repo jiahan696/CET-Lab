@@ -1,0 +1,35 @@
+name: Build Windows artifact
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+
+      - name: Build executable
+        shell: pwsh
+        run: powershell -ExecutionPolicy Bypass -File .\build.ps1
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CET-Glass-Lab-windows
+          path: dist/CET-Glass-Lab.exe
+          if-no-files-found: error

@@ -1,0 +1,44 @@
+[project]
+name = "cet-glass-lab"
+version = "1.0.0"
+description = "大学英语四六级全真模考系统 · 液态玻璃风格 · 本地 JSON 存储"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "CET Glass Lab contributors" }]
+keywords = ["cet", "cet4", "cet6", "flet", "exam", "glassmorphism"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+]
+dependencies = [
+    "flet==1.0.5",
+    "flet-audio==1.0.5",
+    "pypdf==6.21.4",
+    "pillow>=11.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["cetapp*"]
+
+[tool.flet]
+org = "com.cetglasslab"
+product = "CET Glass Lab"
+company = "CET Glass Lab"
+copyright = "Copyright (c) 2026 CET Glass Lab contributors"
+artifact = "CET-Glass-Lab"
+
+[tool.flet.app]
+path = "."
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

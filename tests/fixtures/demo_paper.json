@@ -1,0 +1,210 @@
+{
+  "schema": "cet-glass-paper/v1",
+  "paper": {
+    "id": "demo-paper",
+    "title": "Demo Paper · Study Habits",
+    "level": "CET-4",
+    "duration_sec": 7500,
+    "source": "demo",
+    "audio": "",
+    "created_at": "2026-01-01T00:00:00+08:00",
+    "has_listening": true
+  },
+  "writing": {
+    "id": "writing",
+    "title": "Part I Writing",
+    "directions": "Write an essay about how you organize your study time.",
+    "prompt": "Write an essay about how you organize your study time. You should write at least 120 words but no more than 180 words.",
+    "word_limit": [
+      120,
+      180
+    ],
+    "reference_answer": "A sample essay about planning study time, taking short breaks, and reviewing progress.",
+    "max_score": 106.5
+  },
+  "listening": {
+    "id": "listening",
+    "title": "Part II Listening Comprehension",
+    "audio": "",
+    "available": true,
+    "note": "Demo audio is not bundled.",
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening Comprehension",
+        "questions": [
+          {
+            "id": "L1",
+            "number": 1,
+            "type": "single",
+            "question": "What does the speaker suggest about short study breaks?",
+            "options": [
+              "They should be avoided.",
+              "They can help maintain focus.",
+              "They should last one hour.",
+              "They are only useful at night."
+            ],
+            "answers": [
+              "B"
+            ],
+            "explanation": "短休可以恢复注意力，因此 B 正确。"
+          },
+          {
+            "id": "L2",
+            "number": 2,
+            "type": "single",
+            "question": "Why does the speaker mention a weekly review?",
+            "options": [
+              "To memorize every detail.",
+              "To adjust the study plan.",
+              "To compare with classmates.",
+              "To prepare for a holiday."
+            ],
+            "answers": [
+              "B"
+            ],
+            "explanation": "每周复盘用于调整计划。"
+          }
+        ]
+      }
+    ]
+  },
+  "reading": {
+    "id": "reading",
+    "title": "Part III Reading Comprehension",
+    "passages": [
+      {
+        "id": "reading-a",
+        "title": "Section A",
+        "display": "word_bank",
+        "directions": "Choose the best word for each blank.",
+        "material": "A regular study routine helps learners ___26___ their progress and build confidence. Keeping a simple record of what has been completed also makes it easier to ___27___ the next step.",
+        "bank": [
+          {
+            "key": "A",
+            "text": "track"
+          },
+          {
+            "key": "B",
+            "text": "ignore"
+          },
+          {
+            "key": "C",
+            "text": "plan"
+          },
+          {
+            "key": "D",
+            "text": "reduce"
+          }
+        ],
+        "questions": [
+          {
+            "id": "R26",
+            "number": 26,
+            "type": "single",
+            "question": "Choose the best word for blank 26.",
+            "options": [
+              {
+                "key": "A",
+                "text": "track"
+              },
+              {
+                "key": "B",
+                "text": "ignore"
+              },
+              {
+                "key": "C",
+                "text": "plan"
+              },
+              {
+                "key": "D",
+                "text": "reduce"
+              }
+            ],
+            "answers": [
+              "A"
+            ],
+            "explanation": "track progress 表示记录进展。"
+          },
+          {
+            "id": "R27",
+            "number": 27,
+            "type": "single",
+            "question": "Choose the best word for blank 27.",
+            "options": [
+              {
+                "key": "A",
+                "text": "track"
+              },
+              {
+                "key": "B",
+                "text": "ignore"
+              },
+              {
+                "key": "C",
+                "text": "plan"
+              },
+              {
+                "key": "D",
+                "text": "reduce"
+              }
+            ],
+            "answers": [
+              "C"
+            ],
+            "explanation": "plan the next step 表示规划下一步。"
+          }
+        ]
+      },
+      {
+        "id": "reading-c",
+        "title": "Passage One",
+        "display": "passage",
+        "directions": "Read the passage and answer the questions.",
+        "material": "Many students believe that studying longer always leads to better results. Research on learning suggests a different picture. Short, focused sessions with clear goals are often more effective than long sessions without a plan. A brief review after each session also helps learners remember what they have studied.",
+        "questions": [
+          {
+            "id": "R46",
+            "number": 46,
+            "type": "single",
+            "question": "What does the passage say about long study sessions?",
+            "options": [
+              "They are always the best choice.",
+              "They are not necessarily more effective.",
+              "They should never be used.",
+              "They are only for exams."
+            ],
+            "answers": [
+              "B"
+            ],
+            "explanation": "文章指出长时间学习不一定更有效。"
+          },
+          {
+            "id": "R47",
+            "number": 47,
+            "type": "single",
+            "question": "What helps learners remember what they studied?",
+            "options": [
+              "A brief review after each session.",
+              "Studying without any goals.",
+              "Avoiding all breaks.",
+              "Comparing with others."
+            ],
+            "answers": [
+              "A"
+            ],
+            "explanation": "短文提到简短复习有助于记忆。"
+          }
+        ]
+      }
+    ]
+  },
+  "translation": {
+    "id": "translation",
+    "title": "Part IV Translation",
+    "directions": "Translate the passage into English.",
+    "prompt": "良好的学习习惯需要长期坚持。制定清晰的计划、定期复习，并在遇到困难时主动寻求帮助，都是提高学习效率的重要方法。",
+    "reference_answer": "Good study habits require consistent effort. Making a clear plan, reviewing regularly, and asking for help when facing difficulties are all important ways to improve learning efficiency.",
+    "max_score": 106.5
+  }
+}
